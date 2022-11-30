@@ -26,13 +26,15 @@
     <title>Exercicio1</title>
   </head>
   <body>
-    <div id="root"></div>
+    
 
     <script type="module">
+      let root = document.createElement('root')
+      document.body.appendChild(root)
       let div = document.createElement('div')
       div.setAttribute('class', 'container')
       div.textContent = 'Hello World'
-      let root = document.getElementById('root')
+      
       root.appendChild(div)
     </script>
   </body>
